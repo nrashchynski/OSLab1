@@ -6,3 +6,8 @@ set(CMAKE_CXX_STANDARD 98)
 add_executable(main src/main.cpp src/employee.h)
 add_executable(creator src/creator.cpp src/employee.h)
 add_executable(reporter src/reporter.cpp src/employee.h)
+
+enable_testing()
+
+add_executable(test_employee tests/test_employee.cpp src/employee.h)
+add_test(NAME EmployeeTest COMMAND test_employee)
