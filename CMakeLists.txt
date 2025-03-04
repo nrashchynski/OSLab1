@@ -14,3 +14,6 @@ add_test(NAME EmployeeTest COMMAND test_employee)
 
 add_executable(test_creator tests/test_creator.cpp src/employee.h)
 add_test(NAME CreatorTest COMMAND test_creator)
+
+add_executable(test_reporter tests/test_reporter.cpp src/employee.h)
+add_test(NAME ReporterTest COMMAND test_reporter)
